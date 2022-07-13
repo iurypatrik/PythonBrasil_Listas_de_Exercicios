@@ -3,10 +3,10 @@
 nome = "a"
 senha = 2
 while nome != senha :
-  nome = input("Digite seu nome: ")
-  senha = input("Digite sua senha: ")
+  nome = input("\033[mDigite seu nome: ")
+  senha = input("\033[mDigite sua senha: ")
   if nome != senha:
-    print("Error!")
+    print("\033[31mUsuario ou Senha incorretos! Tente Novamente...")
   if nome == senha :
-    print("Entrando...")
+    print("\033[32mEntrando...")
     break

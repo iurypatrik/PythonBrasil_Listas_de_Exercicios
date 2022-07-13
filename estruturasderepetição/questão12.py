@@ -5,15 +5,17 @@
 # ...
 # 5 X 10 = 50
 
-num1 = int(input("Digite um numero de 1 a 10: "))
+num1 = int(input("\n\033[mDigite um numero \033[33m(de 1 a 10): \033[m"))
 flag = 1
 tab = 0
 while tab < 11:
   flag += 1
   if (num1 <= 10 and num1 >= 1):
-    print("{} X {} = {}" .format(num1,tab,(num1*tab)))
+    print("\033[m{} X {} = \033[32m{}" .format(num1,tab,(num1*tab)))
     tab += 1
   else:
-    num1 = int(input("Digite um numero de 1 a 10: "))
-    if flag > 3:
+    print("\n\033[31mEste numero não esta entre 1 e 10, Tente novamente...")
+    num1 = int(input("\n\033[mDigite um numero de 1 a 10: "))
+    if flag > 2:
+      print("\n\033[31mErro! Numero de tentativas excedido.")
       break

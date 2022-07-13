@@ -17,6 +17,6 @@ while (populaciona < populacionb):
   
   if populaciona >= populacionb:
     print("{} Anos" .format(anos))
-    print("População do Pais A: {:.2f}".format(populaciona))
-    print("População do Pais B: {:.2f}".format(populacionb))
+    print("População do Pais A: {:.0f}".format(populaciona))
+    print("População do Pais B: {:.0f}".format(populacionb))
     break

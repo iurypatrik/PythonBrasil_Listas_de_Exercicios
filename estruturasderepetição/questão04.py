@@ -20,6 +20,7 @@
 populaciona = 80000
 populacionb = 200000
 anos = 0
+
 while True:
   #populaciona > populacionb
   percenta = (populaciona * 0.030) + populaciona
@@ -30,6 +31,6 @@ while True:
   
   if populaciona >= populacionb:
     print("{} Anos" .format(anos))
-    print("População do Pais A: {:.2f}".format(populaciona))
-    print("População do Pais B: {:.2f}".format(populacionb))
+    print("População do Pais A: {:.0f}".format(populaciona))
+    print("População do Pais B: {:.0f}".format(populacionb))
     break
