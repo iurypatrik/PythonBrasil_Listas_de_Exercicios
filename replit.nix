@@ -1,6 +1,7 @@
 { pkgs }: {
   deps = [
-    pkgs.python38Full
+    pkgs.q-text-as-data
+pkgs.python38Full
   ];
   env = {
     PYTHON_LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [

@@ -1,4 +1,5 @@
 # Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores. Peça para cada eleitor votar e ao final mostrar o número de votos de cada candidato.
+
 bolsonaro = []
 lula = []
 ciro = []
@@ -18,8 +19,9 @@ for e in range(eleitores):
     ciro.append(1)
   else:
     nulo.append(1)
-print(f"\nBolsonaro obteve {len(bolsonaro)} votos.")
+print("-="*15)
+print(f"Bolsonaro obteve {len(bolsonaro)} votos.")
 print(f"Lula obteve {len(lula)} votos.")
 print(f"Ciro obteve {len(ciro)} votos.")
 print(f"Brancos/Nulos obteve {len(nulo)} votos.")
-  
+print("-="*15)  
